@@ -1,3 +1,53 @@
+# Webサービスを提供する企業の分析基盤
+
+## ● Mercari
+### ログの収集
+- fluentd
+- embulk
+### ワークフローエンジン
+- Digdag
+### ログのストリーミング処理
+- Norikra  
+  SQLLikeにログデータを処理  
+  fluentdのプラグイン経由でデータを吸い上げて集計することにより、無駄なデータ容量を削減できる
+### ログの蓄積
+- BigQuery
+- Cloud Storage
+- S3
+### ビジュアライズ、BIツール
+- Chartio  
+  WebUIでダッシュボードを作成可能。  
+  異なるサービスの複数データソースをINPUTとすることが可能
+- Google Spread Sheet
+- Kibana
+### ビジュアライズの自動化
+- Google App Script
+### 基盤利用状況の監視
+- Stackdriver
+
+## ● freee
+
+## ● リブセンス
+
+## ● VASILY (Start Today Technologies)
+Fluentd
+embulk
+BigQuery
+Tableau
+AirFlow
+incubator
+メインインフラはAWS
+
+## ● Retty
+
+## ● Gunosy
+
+## ● Recruit Lifestyle
+
+## ● DeNA
+
+---
+
 # Cloud Services
 
 ## ■ Google Cloud Platform
@@ -45,6 +95,9 @@ GoogleCloudPlatform上のリレーショナルデータベースの設定、保�
  - ストリーム分析とイベント駆動型コンピューティングシステム向けの、シンプルで信頼性の高いスケーラブルな基盤として機能
 
 ### ○ Bigtable
+NoSQLビッグデータデータベースサービス
+ - データ規模やアプリケーションの種類にかかわらず、低レイテンシで高スループットを実現
+ - 数百ペタバイトまでも自動的にプロビジョニングとスケーリングを行い、毎秒数百万のオペレーションを滞りなく処理
 
 ## ■ Amazon Web Service
 ### ○ Simple Queue Service

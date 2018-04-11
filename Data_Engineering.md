@@ -1,4 +1,8 @@
 # Webサービスを提供する企業の分析基盤
+下記の目的ごとに、企業内部でも異なる構成でデータ分析基盤が運用されている
+- システムログ(オンプレ、クラウドサービス)の可視化、分析、監視
+- イベントログの可視化、分析
+- 機械学習
 
 ## ● Mercari
 ### ログの収集
@@ -22,10 +26,22 @@
 - Kibana
 ### ビジュアライズの自動化
 - Google App Script
-### 基盤利用状況の監視
+### 分析基盤利用状況の監視
 - Stackdriver
 
 ## ● freee
+### ログ収集、ストリーミング、ワークフロー
+- embulk
+- fluentd
+- digdag
+### ログの蓄積
+- S3
+- Redshift
+- BigQuery
+### ビジュアライズ
+- GA 360 Suite
+- Elasticsearch + Kibana
+- redash
 
 ## ● リブセンス
 
@@ -41,6 +57,19 @@ incubator
 ## ● Retty
 
 ## ● Gunosy
+
+## ● FiNC
+### ログ収集、ストリーミング、ワークフロー
+- kinesis firehose
+- lambda
+- fluentd
+- AWS DMService
+### ログの蓄積
+- S3
+- Redshift
+### ビジュアライズ
+- redash
+- Excel
 
 ## ● Recruit Lifestyle
 
@@ -99,9 +128,44 @@ NoSQLビッグデータデータベースサービス
  - データ規模やアプリケーションの種類にかかわらず、低レイテンシで高スループットを実現
  - 数百ペタバイトまでも自動的にプロビジョニングとスケーリングを行い、毎秒数百万のオペレーションを滞りなく処理
 
+### ○ Firebase
+Googleのインフラストラクチャ上で様々なプロダクトを組み合わせ、モバイルアプリを開発
+ - インフラストラクチャの管理は不要
+ - 状況に応じて自動的にスケーリング
+ - プロダクト間のデータや分析情報の共有が可能
+
 ## ■ Amazon Web Service
-### ○ Simple Queue Service
+### ○ S3
+データの保存と取得が簡単に行えるオブジェクトストレージ
+ - 高い耐久性、可用性、スケーラビリティー
+ - 世界中の規制機関によるコンプライアンス要件を満たすセキュリティ、コンプライアンス機能
+ - 分析システムに移動することなくビッグデータ分析が可能
+
+### ○ RedShift
+高速で完全マネージド型のデータウェアハウス
+ - 標準SQLおよび既存のビジネスインテリジェンス(BI)ツールを使用可能
+ - ペタバイト単位の構造化データに対して複雑な分析クエリを実行可能
+
+### ○ EMR
+Apache Hadoop、Spark、HBase、Presto、Hive、その他のビッグデータフレームワークを簡単に実行してスケーリング
+ - Apache Spark や HBase、Presto、Flink など他の一般的なフレームワークを実行
+ - Amazon S3 や Amazon DynamoDB など他のAWSデータストア内でデータを操作
+
 ### ○ Lambda
+サーバーのプロビジョニングや管理なしでコードを実行
+ - 自動的にアプリケーションをスケール
+ - コードを実行した回数、実行時間に応じて課金
+
+### ○ Kinesis Data Firehose
+ストリーミングデータをデータストアや分析ツールにロードする
+ - スケーリング、シャーディング、モニタリングなど、ストリーム管理全般が提供される
+ - Amazon S3、Amazon Redshift、Amazon Elasticsearch Serviceへのロードが可能
+ - 独自のデータパイプライン処理構築は不要
+
+### ○ Database Migration Service
+
+### ○ Simple Queue Service
+
 ### ○ EC2 Auto Scaling
 
 ## ■ Microsoft Azure
@@ -121,6 +185,13 @@ NoSQLビッグデータデータベースサービス
 
 ## ■ Tableau
 ## ■ Power BI
+## ■ Redash
+
+---
+
+# MA tools
+
+## ■ Marketo
 ## ■ b-dash
 
 ---
@@ -129,8 +200,23 @@ NoSQLビッグデータデータベースサービス
 
 ## ■ Fluentd
 ## ■ Embalk
-## ■ Digdag
 ## ■ Talend
 ## ■ Alteryx
+
+
+## ■ Digdag
+## ■ Airflow
+
+
 ## ■ Tresure Data
 ## ■ Data Robot
+
+
+salesforce
+zendesk
+zuora
+LiveChat
+NewRelic
+bugsnag
+mackerel
+JIRA

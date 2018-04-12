@@ -5,6 +5,8 @@
 - 機械学習
 
 ## ● Mercari
+https://speakerdeck.com/cubicdaiya/mercari-data-analysis-infrastructure
+http://tech.mercari.com/entry/2017/12/09/103000
 ### ログの収集
 - fluentd
 - embulk
@@ -29,7 +31,19 @@
 ### 分析基盤利用状況の監視
 - Stackdriver
 
+## ● Money Forward
+https://www.slideshare.net/tetsuroito/dataops-in-moneyforward
+### ログ収集、ストリーミング、ワークフロー
+- embulk
+- digdag
+### ログの蓄積
+- BigQuery
+### ビジュアライズ
+- Elasticsearch(+ kibana?)
+- redash
+
 ## ● freee
+https://speakerdeck.com/krtk2k/freee-falsedetafen-xi-ji-pan-nituite
 ### ログ収集、ストリーミング、ワークフロー
 - embulk
 - fluentd
@@ -44,21 +58,64 @@
 - redash
 
 ## ● リブセンス
+https://speakerdeck.com/livesense/ribusensufalsedetafen-xi-ji-pan-falsequan-mao
+### ログ収集、ストリーミング、ワークフロー
+- fluentd
+- embulk
+- kinesis firehose
+- EMR Spark
+- Glue
+- Airflow
+### ログの蓄積
+- S3
+- Redshift
+### ビジュアライズ
+- redash
+- Tableau
+- Excel
 
 ## ● VASILY (Start Today Technologies)
-Fluentd
-embulk
-BigQuery
-Tableau
-AirFlow
-incubator
-メインインフラはAWS
+http://tech.starttoday-tech.com/archive/category/%E3%83%87%E3%83%BC%E3%82%BF
+### ログ収集、ストリーミング、ワークフロー
+- fluentd
+- embulk
+- Puree
+- AirFlow
+- incubator
+- Luigi
+### ログの蓄積
+- BigQuery
+### ビジュアライズ
+- Tableau
+- SpreadSheet
 
 ## ● Retty
+https://speakerdeck.com/jp_taku2/rettyfalsefen-xi-ji-pan-nituite-detafen-xi-ji-pan-night-number-1
+https://speakerdeck.com/chie8842/rettyfalsefen-xi-ji-pan-niokeruawshuo-yong-shu
+### ログ収集、ストリーミング、ワークフロー
+- fluentd
+- embulk
+- kinesis Firehose
+- EMR Spark
+- AirFlow
+### ログの蓄積
+- S3
+- BigQuery
+### ビジュアライズ
+- Tableau
 
 ## ● Gunosy
+https://speakerdeck.com/moyomot/gunosyfalsedetafen-xi-ji-pan-roguji-pan-falsequan-rong
+### ログ収集、ストリーミング、ワークフロー
+- Fluentd
+### ログの蓄積
+- RedShift
+- BigQuery
+### ビジュアライズ
+- redash
 
 ## ● FiNC
+https://speakerdeck.com/yoshimikeisui/fincfalsefen-xi-ji-pan-falsegai-yao
 ### ログ収集、ストリーミング、ワークフロー
 - kinesis firehose
 - lambda
@@ -145,6 +202,7 @@ Googleのインフラストラクチャ上で様々なプロダクトを組み�
 高速で完全マネージド型のデータウェアハウス
  - 標準SQLおよび既存のビジネスインテリジェンス(BI)ツールを使用可能
  - ペタバイト単位の構造化データに対して複雑な分析クエリを実行可能
+設計時に、[ノードスライス][分散キー(DISTKEY)][ソートキー(SORTKEY)]の概念理解が重要
 
 ### ○ EMR
 Apache Hadoop、Spark、HBase、Presto、Hive、その他のビッグデータフレームワークを簡単に実行してスケーリング
@@ -162,9 +220,15 @@ Apache Hadoop、Spark、HBase、Presto、Hive、その他のビッグデータ�
  - Amazon S3、Amazon Redshift、Amazon Elasticsearch Serviceへのロードが可能
  - 独自のデータパイプライン処理構築は不要
 
-### ○ Database Migration Service
+### ○ Kinesis Data Streams
+
+### ○ Kinesis Data Analytics
 
 ### ○ Simple Queue Service
+
+### ○ Glue
+
+### ○ Database Migration Service
 
 ### ○ EC2 Auto Scaling
 
@@ -220,3 +284,4 @@ NewRelic
 bugsnag
 mackerel
 JIRA
+makefile(データフローエンジン)

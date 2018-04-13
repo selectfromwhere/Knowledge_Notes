@@ -7,126 +7,137 @@
 ## ● Mercari
 https://speakerdeck.com/cubicdaiya/mercari-data-analysis-infrastructure
 http://tech.mercari.com/entry/2017/12/09/103000
-### ログの収集
-- fluentd
-- embulk
-### ワークフローエンジン
-- Digdag
-### ログのストリーミング処理
-- Norikra  
-  SQLLikeにログデータを処理  
-  fluentdのプラグイン経由でデータを吸い上げて集計することにより、無駄なデータ容量を削減できる
-### ログの蓄積
-- BigQuery
-- Cloud Storage
-- S3
-### ビジュアライズ、BIツール
-- Chartio  
-  WebUIでダッシュボードを作成可能。  
-  異なるサービスの複数データソースをINPUTとすることが可能
-- Google Spread Sheet
-- Kibana
-### ビジュアライズの自動化
-- Google App Script
-### 分析基盤利用状況の監視
-- Stackdriver
+- ログの収集
+  - fluentd
+  - embulk
+- ワークフローエンジン
+  - Digdag
+- ログのストリーミング処理
+  - Norikra  
+    SQLLikeにログデータを処理  
+    fluentdのプラグイン経由でデータを吸い上げて集計することにより、無駄なデータ容量を削減できる
+- ログの蓄積
+  - BigQuery
+  - Cloud Storage
+  - S3
+- ビジュアライズ、BIツール
+  - Chartio  
+    WebUIでダッシュボードを作成可能。  
+    異なるサービスの複数データソースをINPUTとすることが可能
+  - Google Spread Sheet
+  - Kibana
+- ビジュアライズの自動化
+  - Google App Script
+- 分析基盤利用状況の監視
+  - Stackdriver
 
 ## ● Money Forward
 https://www.slideshare.net/tetsuroito/dataops-in-moneyforward
-### ログ収集、ストリーミング、ワークフロー
-- embulk
-- digdag
-### ログの蓄積
-- BigQuery
-### ビジュアライズ
-- Elasticsearch(+ kibana?)
-- redash
+- ログ収集、ストリーミング、ワークフロー
+  - embulk
+  - digdag
+- ログの蓄積
+  - BigQuery
+- ビジュアライズ
+  - Elasticsearch(+ kibana?)
+  - redash
 
 ## ● freee
 https://speakerdeck.com/krtk2k/freee-falsedetafen-xi-ji-pan-nituite
-### ログ収集、ストリーミング、ワークフロー
-- embulk
-- fluentd
-- digdag
-### ログの蓄積
-- S3
-- Redshift
-- BigQuery
-### ビジュアライズ
-- GA 360 Suite
-- Elasticsearch + Kibana
-- redash
+- ログ収集、ストリーミング、ワークフロー
+  - embulk
+  - fluentd
+  - digdag
+- ログの蓄積
+  - S3
+  - Redshift
+  - BigQuery
+- ビジュアライズ
+  - GA 360 Suite
+  - Elasticsearch + Kibana
+  - redash
 
 ## ● リブセンス
 https://speakerdeck.com/livesense/ribusensufalsedetafen-xi-ji-pan-falsequan-mao
-### ログ収集、ストリーミング、ワークフロー
-- fluentd
-- embulk
-- kinesis firehose
-- EMR Spark
-- Glue
-- Airflow
-### ログの蓄積
-- S3
-- Redshift
-### ビジュアライズ
-- redash
-- Tableau
-- Excel
+- ログ収集、ストリーミング、ワークフロー
+  - fluentd
+  - embulk
+  - kinesis firehose
+  - EMR Spark
+  - Glue
+  - Airflow
+- ログの蓄積
+  - S3
+  - Redshift
+- ビジュアライズ
+  - redash
+  - Tableau
+  - Excel
 
 ## ● VASILY (Start Today Technologies)
 http://tech.starttoday-tech.com/archive/category/%E3%83%87%E3%83%BC%E3%82%BF
-### ログ収集、ストリーミング、ワークフロー
-- fluentd
-- embulk
-- Puree
-- AirFlow
-- incubator
-- Luigi
-### ログの蓄積
-- BigQuery
-### ビジュアライズ
-- Tableau
-- SpreadSheet
+- ログ収集、ストリーミング、ワークフロー
+  - fluentd
+  - embulk
+  - Puree
+  - AirFlow
+  - incubator
+  - Luigi
+- ログの蓄積
+  - BigQuery
+- ビジュアライズ
+  - Tableau
+  - SpreadSheet
 
 ## ● Retty
 https://speakerdeck.com/jp_taku2/rettyfalsefen-xi-ji-pan-nituite-detafen-xi-ji-pan-night-number-1
 https://speakerdeck.com/chie8842/rettyfalsefen-xi-ji-pan-niokeruawshuo-yong-shu
-### ログ収集、ストリーミング、ワークフロー
-- fluentd
-- embulk
-- kinesis Firehose
-- EMR Spark
-- AirFlow
-### ログの蓄積
-- S3
-- BigQuery
-### ビジュアライズ
-- Tableau
+- ログ収集、ストリーミング、ワークフロー
+  - fluentd
+  - embulk
+  - kinesis Firehose
+  - EMR Spark
+  - AirFlow
+- ログの蓄積
+  - S3
+  - BigQuery
+- ビジュアライズ
+  - Tableau
+
+## ● Cookpad
+http://techlife.cookpad.com/entry/2017/10/06/135527
+- ログ収集、ストリーミング、ワークフロー
+  - Puree
+  - fluentd
+  - 内製ツール
+- ログの蓄積
+  - RedShift
+- ビジュアライズ
+  - redash(→Tableau?)
 
 ## ● Gunosy
 https://speakerdeck.com/moyomot/gunosyfalsedetafen-xi-ji-pan-roguji-pan-falsequan-rong
-### ログ収集、ストリーミング、ワークフロー
-- Fluentd
-### ログの蓄積
-- RedShift
-- BigQuery
-### ビジュアライズ
-- redash
+- ログ収集、ストリーミング、ワークフロー
+  - Fluentd
+- ログの蓄積
+  - RedShift
+  - BigQuery
+- ビジュアライズ
+  - redash
 
 ## ● FiNC
 https://speakerdeck.com/yoshimikeisui/fincfalsefen-xi-ji-pan-falsegai-yao
-### ログ収集、ストリーミング、ワークフロー
-- kinesis firehose
-- lambda
-- fluentd
-- AWS DMService
-### ログの蓄積
-- S3
-- Redshift
-### ビジュアライズ
-- redash
-- Excel
+- ログ収集、ストリーミング、ワークフロー
+  - kinesis firehose
+  - lambda
+  - fluentd
+  - AWS DMService
+- ログの蓄積
+  - S3
+  - Redshift
+- ビジュアライズ
+  - redash
+  - Excel
 
 ## ● Recruit Lifestyle
 
